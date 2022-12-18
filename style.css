@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth; 
+  }
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #0f141e;
+    background-color: #f1f1f1;
+    font-family: 'roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.header {
+    background-color: #f5c578b6;
+    margin-bottom: 20px;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+.section {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+.section img {
+    height: 40%;
+    width: 40%;
+    border-radius: 5%;
+    box-shadow: 5px 5px 14px #00000040;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+  }
+
+.nav-item {
+    padding: 0 20px;
+}
+
+.nav-link {
+    font-size: 18px;
+    color: #100c0c;
+    line-height: 50px;
+    text-decoration: none;
+    transition: color 0.2s
+  }
+
+.nav-item:hover {
+    color: #cfcdc4;
+    background-color: #b77c2a74;
+    border-radius: 5%;
+  }
+
+#profile {
+    border-bottom: solid 2px #f5c578b6;
+}
+
+.footer {
+    font-size: 18px;
+    background-color: #f5c578b6;
+    line-height: 50px;
+}
+
+.footer_container {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer_left {
+    margin-left: 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.footer_right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.footer img {
+    height: 50%;
+    width: 50%;
+}
+
+
+.footer_left a {
+    padding: 0 10px;
+    text-decoration: none;
+    color: #0f141e;
+}
+
+.footer_left a :hover {
+    text-decoration: none;
+    color: #cfcdc4;
+}
+
+
+@media (max-width: 768px) {
+    .section {
+      width: 100%;
+    }
+  }
